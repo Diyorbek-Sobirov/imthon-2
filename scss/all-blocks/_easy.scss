@@ -1,6 +1,6 @@
 .easy {
     margin-top: 50px;
-    position: relative;
+    display: flex;
     &::before {
         content: "";
         width: 550px;
@@ -8,13 +8,12 @@
         background: url(../../img/easy.svg) no-repeat;
         display: flex;
         // border: 1px solid red;
-        position: absolute;
+        // position: absolute;
         left: 0;
         top: 0;
     }
     &__card {
        width: 40%; 
-       position: absolute;
        right: 0;
        top: 80px;
        &__title {

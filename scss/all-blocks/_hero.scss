@@ -1,7 +1,4 @@
 .hero {
-    position: relative;
-    margin: 0 auto;
-    width: 1125px;
     display: flex;
     &::before {
         content: "";
@@ -12,7 +9,6 @@
         height: 580px;
         background: url(../img/circle.png) no-repeat;
         background-size: 100% 100%;
-        z-index: 1000;
     }
     &::after {
         content: "";
@@ -22,11 +18,11 @@
         width: 400px;
         height: 650px;
         background: url(../../img/iphone.png) no-repeat;
-        background-size: 100% 100%;
+        // background-size: 100% 100%;
         z-index: 10;        
     }
     &__card {
-        width: 45%;
+        width: 50%;
         &__title {
             font-family: DM Serif Display;
             font-style: normal;
@@ -102,14 +98,14 @@
         &::before {
             content: "";
             position: absolute;
-            top: -300px;
+            top: -500px;
             left: -5%;
             width: 900px;
             height: 580px;
-            background: url(../img/circle6.png) no-repeat;
+            background: url(../../img/circle6.png) no-repeat;
             background-size: 100% 100%;
             z-index: -100;
-            // transform: scaleX(-1);
+
         }
         &::after {
             content: "";
@@ -204,7 +200,7 @@
             left: -78px;
             width: 800px;
             height: 580px;
-            background: url(../img/circle.png) no-repeat;
+            background: url(../../img/circle.png) no-repeat;
             background-size: 100% 100%;
             z-index: 1000;
         }
@@ -264,7 +260,7 @@
                     font-weight: bold;
                     font-size: 15px;
                     line-height: 18px;
-                    /* identical to box height */
+
                     letter-spacing: -0.115385px;
                     color: #FBFCFE;
                     background: #BA4270;
