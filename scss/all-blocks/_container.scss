@@ -1,6 +1,24 @@
+// .container{
+//     max-width: 1110px;
+//     margin: 0 auto !important;
+//     padding: 0 30px;
+// }
 .container{
     max-width: 1110px;
-    margin: 0 auto !important;
+    margin: 0 auto;
     padding: 0 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 39px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        padding: 0 24px;
+    }
+    
+}
