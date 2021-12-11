@@ -1,0 +1,98 @@
+.easy {
+    margin-top: 50px;
+    position: relative;
+    &::before {
+        content: "";
+        width: 550px;
+        height: 350px;
+        background: url(../../img/easy.svg) no-repeat;
+        display: flex;
+        // border: 1px solid red;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &__card {
+       width: 40%; 
+       position: absolute;
+       right: 0;
+       top: 80px;
+       &__title {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+        /* identical to box height, or 117% */       
+        letter-spacing: -0.369231px;    
+        color: #36536B;
+       }
+       &__desc {
+        font-family: Public Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 28px;
+        /* or 187% */
+        color: #6C8294;
+       }
+    }
+}
+@media screen and (max-width: 970px) {
+    .easy {
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            width: 100%;
+            content: "";
+            width: 550px;
+            height: 350px;
+            background: url(../../img/easy.svg) no-repeat;
+            display: flex;
+            // border: 1px solid red;
+            position: absolute;
+            left: 20%;
+            top: 0;
+        }
+        &__card {
+           width: 70%; 
+           position: absolute;
+           left: 15%;
+           margin-top: 300px;
+           text-align: center;
+        
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .easy {
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            width: 100%;
+            content: "";
+            width: 550px;
+            height: 350px;
+            background: url(../../img/easy.svg) no-repeat;
+            display: flex;
+            // border: 1px solid red;
+            position: absolute;
+            left: 20%;
+            top: 0;
+        }
+        &__card {
+           width: 70%; 
+           position: absolute;
+           left: 25%;
+           margin-top: 300px;
+           text-align: center;
+        
+        }
+    }
+}

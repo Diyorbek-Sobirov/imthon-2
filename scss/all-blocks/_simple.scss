@@ -1,0 +1,275 @@
+.simple {
+    margin-top: 350px;
+    position: relative;
+    height: 1000px;
+    // border: 1px solid red;
+    &::before {
+        content: "";
+        width: 750px;
+        height: 750px;
+        background: url(../../img/circle4.png) no-repeat;
+        background-size: contain;
+        
+        display: flex;
+        // border: 1px solid red;
+        position: absolute;
+        right: -30%;
+        top: 0;
+        z-index: -10;
+    }
+    &::after {
+        margin-top: 100px;
+        content: "";
+        width: 400px;
+        height: 673px;
+        background: url(../../img/tel2.png) no-repeat;
+        background-size: cover;
+        display: flex;
+        z-index: 11;
+        position: absolute;
+        right: -2%;
+        background-size: 100% 100%;
+        top: 0;
+    }
+    &__img {
+        margin-top: 100px;
+        width: 400px;
+        height: 673px;
+        background: url(../../img/tel1.png) no-repeat;
+        background-size: cover;
+        display: flex;
+        position: absolute;
+        right: 22%;
+        background-size: 100% 100%;
+        top: 0;
+    }
+    &__card {
+       width: 40%; 
+       position: absolute;
+       
+       top: 280px;
+       &__title {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+        /* identical to box height, or 117% */       
+        letter-spacing: -0.369231px;    
+        color: #36536B;
+       }
+       &__desc {
+        font-family: Public Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 28px;
+        /* or 187% */
+        color: #6C8294;
+       }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .simple {
+        margin-top: 450px;
+        position: relative;
+        height: 1000px;
+        
+        flex-wrap: wrap;
+        flex-direction: column;
+        &::before {
+            content: "none";
+            display: none;
+        }
+        &::after {
+            margin-top: 100px;
+            content: "";
+            width: 350px;
+            height: 573px;
+            background: url(../../img/tel2.png) no-repeat;
+            background-size: cover;
+            display: flex;
+            position: absolute;
+            right: 20%;
+            background-size: 100% 100%;
+            top: 0;
+        }
+        &__img {
+            margin-top: 100px;
+            width: 350px;
+            height: 573px;
+            background: url(../../img/tel1.png) no-repeat;
+            background-size: cover;
+            display: flex;
+            position: absolute;
+            right: 50%;
+            background-size: 100% 100%;
+            top: 0;
+        }
+        &__card {
+            text-align: center;
+           width: 70%; 
+           display: block;
+           position: absolute;
+           left: 10%;
+           top: 70%;
+           &__title {
+            font-family: DM Serif Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+            /* identical to box height, or 117% */       
+            letter-spacing: -0.369231px;    
+            color: #36536B;
+           }
+           &__desc {
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            /* or 187% */
+            color: #6C8294;
+           }
+        }
+    }
+    
+@media screen and (max-width: 770px) {
+    .simple {
+        margin-top: 450px;
+        position: relative;
+        height: 1000px;
+        
+        flex-wrap: wrap;
+        flex-direction: column;
+        &::before {
+            content: "none";
+            display: none;
+        }
+        &::after {
+            margin-top: 100px;
+            content: "";
+            width: 350px;
+            height: 573px;
+            background: url(../../img/tel2.png) no-repeat;
+            background-size: cover;
+            display: flex;
+            position: absolute;
+            right: 10%;
+            background-size: 100% 100%;
+            top: 0;
+          
+        }
+        &__img {
+            margin-top: 100px;
+            width: 350px;
+            height: 573px;
+            background: url(../../img/tel1.png) no-repeat;
+            background-size: cover;
+            display: flex;
+            position: absolute;
+            right: 45%;
+            background-size: 100% 100%;
+            top: 0;
+            
+        }
+        &__card {
+            text-align: center;
+           width: 70%; 
+           display: block;
+           position: absolute;
+           left: 10%;
+           top: 70%;
+           &__title {
+            font-family: DM Serif Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+            /* identical to box height, or 117% */       
+            letter-spacing: -0.369231px;    
+            color: #36536B;
+           }
+           &__desc {
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            /* or 187% */
+            color: #6C8294;
+           }
+        }
+    }
+}
+    }
+    @media screen and (max-width: 770px) {
+        .simple {
+            margin-top: 450px;
+            position: relative;
+            height: 1000px;
+            
+            flex-wrap: wrap;
+            flex-direction: column;
+            &::before {
+                content: "none";
+                display: none;
+            }
+            &::after {
+                margin-top: 100px;
+                content: "";
+                width: 350px;
+                height: 573px;
+                background: url(../../img/tel2.png) no-repeat;
+                background-size: cover;
+                display: flex;
+                position: absolute;
+                right: -5%;
+                background-size: 100% 100%;
+                top: 0;
+              
+            }
+            &__img {
+                margin-top: 100px;
+                width: 350px;
+                height: 573px;
+                background: url(../../img/tel1.png) no-repeat;
+                background-size: cover;
+                display: flex;
+                position: absolute;
+                right: 40%;
+                background-size: 100% 100%;
+                top: 0;
+                
+            }
+            &__card {
+                text-align: center;
+               width: 70%; 
+               display: block;
+               position: absolute;
+               left: 20%;
+               top: 70%;
+               &__title {
+                font-family: DM Serif Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 48px;
+                line-height: 56px;
+                /* identical to box height, or 117% */       
+                letter-spacing: -0.369231px;    
+                color: #36536B;
+               }
+               &__desc {
+                font-family: Public Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 28px;
+                /* or 187% */
+                color: #6C8294;
+               }
+            }
+        }
+    }
+        

@@ -1,0 +1,175 @@
+.products {
+    &__card {
+        width: 33%;
+        padding: 10px;
+        padding-top: 130px;
+        &:nth-child(1) {
+            position: relative;
+            &::before {
+                content: "";
+                width: 106px;
+                height: 106px;
+                position: absolute;
+                top: 0;
+                left: 33%;
+                background: url(../../img/finance.svg) no-repeat;
+                
+            }
+        }
+        &:nth-child(2) {
+            position: relative;
+            &::before {
+                content: "";
+                width: 106px;
+                height: 106px;
+                position: absolute;
+                top: 0;
+                left: 33%;
+                background: url(../../img/banking.svg) no-repeat;
+                
+            }
+        }
+        &:nth-child(3) {
+            position: relative;
+            
+            &::before {
+                content: "";
+                width: 106px;
+                height: 106px;
+                position: absolute;
+                top: 0;
+                left: 33%;
+                background: url(../../img/payment.svg) no-repeat;
+                
+            }
+        }
+        &__title {
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            /* identical to box height, or 139% */
+            text-align: center;
+            letter-spacing: -0.138462px;
+            color: #36536B;
+        }
+        &__desc {
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 167% */
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: #6C8294;
+        }
+    }
+}
+@media screen and (max-width: 815px) {
+    .products {
+        flex-wrap: wrap;
+        // flex-direction: column;
+        &__card {
+            width: 33%;
+            padding: 10px;
+            padding-top: 130px;
+            &:nth-child(1) {
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 106px;
+                    height: 106px;
+                    position: absolute;
+                    top: 0;
+                    left: 25%;
+                    background: url(../../img/finance.svg) no-repeat;
+                    
+                }
+            }
+            &:nth-child(2) {
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 106px;
+                    height: 106px;
+                    position: absolute;
+                    top: 0;
+                    left: 25%;
+                    background: url(../../img/banking.svg) no-repeat;
+                    
+                }
+            }
+            &:nth-child(3) {
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 106px;
+                    height: 106px;
+                    position: absolute;
+                    top: 0;
+                    left: 25%;
+                    background: url(../../img/payment.svg) no-repeat;
+                }
+            }
+            
+            
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .products {
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+        &__card {
+            width: 70%;
+            padding: 10px;
+            padding-top: 130px;
+            position: absolute;
+            left: 10%;
+            margin-top: 10px;
+            &:nth-child(1) {
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 106px;
+                    height: 106px;
+                    position: absolute;
+                    top: 0;
+                    left: 35%;
+                    background: url(../../img/finance.svg) no-repeat;
+                    
+                }
+            }
+            &:nth-child(2) {
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 106px;
+                    height: 106px;
+                    position: absolute;
+                    top: 0;
+                    left: 33%;
+                    background: url(../../img/banking.svg) no-repeat;
+                    
+                }
+            }
+            &:nth-child(3) {
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 106px;
+                    height: 106px;
+                    position: absolute;
+                    top: 0;
+                    left: 33%;
+                    background: url(../../img/payment.svg) no-repeat;
+                }
+            }
+            
+            
+        }
+    }
+}
